@@ -13,7 +13,7 @@ public class HorasDeTrabalho {
 
         double salario = horasDeTrabalho * salarioPorHora;
         System.out.print("Seu salario é: " + salario);
-        scanner.close();
+        scanner.close();//
     }
 
 
