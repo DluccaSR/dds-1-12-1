@@ -6,7 +6,7 @@ public class RaioDeUmCirculo {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
-            System.out.print("Digite o raio do Circulo");
+            System.out.print("Digite o raio do Circulo ");
             Double raio = scanner.nextDouble();
             Double raioAoQuadrado = raio * raio;
             Double pi = 3.14;

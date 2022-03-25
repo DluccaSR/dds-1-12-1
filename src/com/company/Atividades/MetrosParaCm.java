@@ -11,6 +11,6 @@ public class MetrosParaCm {
             double centimetros = scanner.nextDouble();
             int multiplicador = 100;
             Double CM = centimetros * multiplicador;
-            System.out.print("Seu numero e: " + CM);
+            System.out.print("Seu numero e: " + CM + " cm ");
         }
 }
