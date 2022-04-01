@@ -14,4 +14,7 @@ public class PeixesDeJoão {
         System.out.print("O valor da multa de Joao é: " + resultado);
         scanner.close();
     }
+
+    public static class Exercicio16 {
+    }
 }

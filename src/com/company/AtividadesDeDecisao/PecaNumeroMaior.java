@@ -1,12 +1,11 @@
 package com.company.AtividadesDeDecisao;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class PecaNumeroMaior {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite seu primeir numero: ");
+        System.out.print("Digite seu primeirp numero: ");
         double numeroUm = scanner.nextDouble();
         System.out.print("Digite o segundo numero: ");
         double numero2 = scanner.nextDouble();
