@@ -13,7 +13,7 @@ public class PecaNumeroMaior {
         System.out.print("O maior numero é: " + numeroUm);
     } else {
         System.out.print("O maior numero é: " + numero2 );
-
        }
+    scanner.close();
     }
 }

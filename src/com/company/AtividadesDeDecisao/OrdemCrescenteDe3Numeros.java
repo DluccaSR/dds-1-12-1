@@ -15,5 +15,6 @@ public class OrdemCrescenteDe3Numeros {
         if (numero1 > numero2 && numero1 > numero3) {
             System.out.println("A ordem é: " + numero1 + "\n" + numero2 + "\n" + numero3 );
         }
+        scanner.close();
     }
 }

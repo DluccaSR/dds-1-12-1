@@ -8,10 +8,9 @@ public class SeEVogalOuConsoante {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite uma letra: ");
         String letra = scanner.nextLine();
-
-        if (Objects.equals(letra, "A" )) {
+        if (Objects.equals(letra, "A")) {
             System.out.print(letra + "\nE uma letra vogal");
-        }else if (Objects.equals(letra, "E")) {
+        } else if (Objects.equals(letra, "E")) {
             System.out.print(letra + "\nE uma vogal ");
         } else if (Objects.equals(letra, "I")) {
             System.out.print(letra + "\nE uma vogal");
@@ -19,9 +18,9 @@ public class SeEVogalOuConsoante {
             System.out.print(letra + "\nE uma vogal");
         } else if (Objects.equals(letra, "U")) {
             System.out.print(letra + "\nE uma vogal ");
-        }else {
+        } else {
             System.out.print(" E uma consoante");
-
-            }
         }
+        scanner.close();
     }
+}

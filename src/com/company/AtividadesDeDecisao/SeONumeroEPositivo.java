@@ -7,10 +7,12 @@ public class SeONumeroEPositivo {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite seu numero: ");
         double numero = scanner.nextDouble();
-        if (numero > 0) {
-            System.out.print("Seu numero é positivo");
+        boolean numeroEMaiorOuIgualAZero = numero >= 0;
+        if (numeroEMaiorOuIgualAZero) {
+            System.out.print("Seu numero é Positivo!");
         } else {
-            System.out.print("Seu numero é negativo");
+            System.out.print("Seu numero é Negativo!");
         }
+        scanner.close();
     }
 }

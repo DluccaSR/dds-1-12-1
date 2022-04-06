@@ -15,13 +15,12 @@ public class ExercicioTeste {
 
         double juros = 0.0;
 
-        if (!pagamentoAVista)
-            juros = 10.0;
+        if (!pagamentoAVista) juros = 10.0;
 
 
-        double acrescimo = precoDoProduto *  juros / cem;
+        double acrescimo = precoDoProduto * juros / cem;
         double precoAPagar = acrescimo + precoDoProduto;
-        System.out.printf("Você vai pagar: " + precoAPagar );
+        System.out.printf("Você vai pagar: " + precoAPagar);
         scanner.close();
     }
 }

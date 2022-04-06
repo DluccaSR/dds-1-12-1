@@ -16,8 +16,9 @@ public class MaiorNumeroEntreTres {
             System.out.print("Seu numero é: " + numero1);
         } else if (numero2 > numero1 && numero2 > numero3) {
             System.out.print("Seu numero é: " + numero2);
-        } else if (numero3 > numero1 && numero3 > numero2){
-            System.out.print("Seu numero é: " + numero3 );
+        } else if (numero3 > numero1 && numero3 > numero2) {
+            System.out.print("Seu numero é: " + numero3);
         }
+        scanner.close();
     }
 }

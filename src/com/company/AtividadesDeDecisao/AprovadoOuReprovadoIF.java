@@ -10,19 +10,18 @@ public class AprovadoOuReprovadoIF {
         double nota1 = scanner.nextDouble();
         System.out.print("Digite sua segunda nota: ");
         double nota2 = scanner.nextDouble();
-        System.out.print("Digite sua terceira nota: ");
-        double nota3 = scanner.nextDouble();
-        byte divisorDeMedia = 3;
-        double somaDeNotas = nota1 + nota2 + nota3;
+        double somaDeNotas = nota1 + nota2;
+        byte divisorDeMedia = 2;
         double resultado = somaDeNotas / divisorDeMedia;
-        System.out.println("Sua nota foi: " + resultado );
+        System.out.println("Sua nota foi: " + resultado);
         if (resultado == 10) {
-            System.out.print("Parabens, você foi aprovado!");
+            System.out.print("Parabens, você foi aprovado com Distinçao!");
         } else if (resultado <= 7) {
             System.out.print("Nao foi dessa vez, você foi reprovado!");
-        } else if (resultado >= 7){
-            System.out.print("Meus Parabéns!");
+        } else if (resultado >= 7) {
+            System.out.print("Meus Parabéns! Aprovado.");
         }
+        scanner.close();
     }
 }
 
