@@ -21,8 +21,13 @@ public class SalarioTabajara {
         int salarioAte280 = 280;
         int salarioDe700 = 700;
         int salarioDe1500ParaMais = 1500;
+        Boolean salarioMenorQue280 = salario <= salarioAte280;
+        Boolean salarioDe280Ate700 = salario >= salarioAte280 && salario <= salarioDe700;
+        Boolean salarioDe700aAte1500 = salario >= salarioDe700 && salario <= salarioDe1500ParaMais;
+        Boolean salarioDeMaisDe1500 =  salario >= salarioDe1500ParaMais;
+          
 
-        if (salario <= salarioAte280) {
+        if (salarioMenorQue280) {
             double vintePorCento = 0.2;
             Double resultadoDoAumentoDeVintePorCento = salarioAte280 * vintePorCento;
             double salarioReajustado = resultadoDoAumentoDeVintePorCento + salario;
@@ -30,7 +35,7 @@ public class SalarioTabajara {
             System.out.println("O aumento foi de 20%");
             System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeVintePorCento);
             System.out.println("O salario novo foi de: " + salarioReajustado);
-        } else if ( salario >= salarioAte280 && salario <= salarioDe700) {
+        } else if (salarioDe280Ate700) {
             double quinzePorCento = 0.15;
             double resultadoDoAumentoDeQuizePorCento = salario * quinzePorCento;
             double salarioReajustado = resultadoDoAumentoDeQuizePorCento + salario;
@@ -38,7 +43,7 @@ public class SalarioTabajara {
             System.out.println("O aumento foi de 15%");
             System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeQuizePorCento);
             System.out.println("O salario novo foi de: " + salarioReajustado);
-        }else if (salario >= salarioDe700 && salario <= salarioDe1500ParaMais) {
+        }else if (salarioDe700aAte1500) {
             double dezPorCento = 0.1;
             double resultadoDoAumentoDeDezPorCento = salario * dezPorCento;
             double salarioReajustado = salario + resultadoDoAumentoDeDezPorCento;
@@ -46,7 +51,7 @@ public class SalarioTabajara {
             System.out.println("O aumento foi de 10%");
             System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeDezPorCento);
             System.out.println("O salario novo foi de: " + salarioReajustado);
-        }else if ( salario >= salarioDe1500ParaMais) {
+        }else if (salarioDeMaisDe1500) {
                 double cincoPorCento = 0.05;
                 double resultadoDoAumentoDeCincoPorCento = salario * cincoPorCento;
                 double salarioReajustado = salario + resultadoDoAumentoDeCincoPorCento;
