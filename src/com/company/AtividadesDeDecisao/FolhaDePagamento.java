@@ -12,9 +12,23 @@ public class FolhaDePagamento {
                 " \n [T - Terça]\n [Qa - Quarta]\n [Qi - Quinta]\n [Sx - Sexta ]" +
                 " \n [Sb - Sabado] \n [D - Domingo]" );
         String dia = scanner.nextLine();
-        if (Objects.equals(dia, "S"));
-
-
-
+        String diaDaSemana = null;
+        switch (dia){
+            case "S":
+                diaDaSemana = "Segunda";
+            case "T":
+                System.out.println("Terça");
+            case "Qa":
+                System.out.println("Quarta");
+            case "Qi":
+                System.out.println("Quinta");
+            case "Sex":
+                System.out.println("Sexta");
+            case "Sab":
+                System.out.println("Sabado");
+            case "D":
+                System.out.println("Domingo");
+        }
+        System.out.println(diaDaSemana);
     }
 }
