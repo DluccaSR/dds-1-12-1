@@ -25,40 +25,40 @@ public class SalarioTabajara {
         Boolean salarioDe280Ate700 = salario >= salarioAte280 && salario <= salarioDe700;
         Boolean salarioDe700aAte1500 = salario >= salarioDe700 && salario <= salarioDe1500ParaMais;
         Boolean salarioDeMaisDe1500 =  salario >= salarioDe1500ParaMais;
-          
+
 
         if (salarioMenorQue280) {
             double vintePorCento = 0.2;
             Double resultadoDoAumentoDeVintePorCento = salarioAte280 * vintePorCento;
             double salarioReajustado = resultadoDoAumentoDeVintePorCento + salario;
-            System.out.println("Antes do reajuste o salario era de: " + salario);
-            System.out.println("O aumento foi de 20%");
+            System.out.println("Salario antes do reajuste: " + salario);
+            System.out.println("O percentual do aumento foi de 20%");
             System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeVintePorCento);
             System.out.println("O salario novo foi de: " + salarioReajustado);
         } else if (salarioDe280Ate700) {
             double quinzePorCento = 0.15;
             double resultadoDoAumentoDeQuizePorCento = salario * quinzePorCento;
             double salarioReajustado = resultadoDoAumentoDeQuizePorCento + salario;
-            System.out.println("Antes do reajuste o salario era de: " + salario);
-            System.out.println("O aumento foi de 15%");
+            System.out.println("Salario antes do reajuste: " + salario);
+            System.out.println("O percentual do aumento foi de 15%");
             System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeQuizePorCento);
             System.out.println("O salario novo foi de: " + salarioReajustado);
         }else if (salarioDe700aAte1500) {
             double dezPorCento = 0.1;
             double resultadoDoAumentoDeDezPorCento = salario * dezPorCento;
             double salarioReajustado = salario + resultadoDoAumentoDeDezPorCento;
-            System.out.println("Antes do reajuste o salario era de: " + salario);
-            System.out.println("O aumento foi de 10%");
+            System.out.println("Salario antes do reajuste: " + salario);
+            System.out.println("O percentual do aumento foi de 10%");
             System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeDezPorCento);
             System.out.println("O salario novo foi de: " + salarioReajustado);
         }else if (salarioDeMaisDe1500) {
-                double cincoPorCento = 0.05;
-                double resultadoDoAumentoDeCincoPorCento = salario * cincoPorCento;
-                double salarioReajustado = salario + resultadoDoAumentoDeCincoPorCento;
-                System.out.println("Antes do reajuste o salario era de: " + salario);
-                System.out.println("O aumento foi de 5%");
-                System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeCincoPorCento);
-                System.out.println("O salario novo foi de: " + salarioReajustado);
+            double cincoPorCento = 0.05;
+            double resultadoDoAumentoDeCincoPorCento = salario * cincoPorCento;
+            double salarioReajustado = salario + resultadoDoAumentoDeCincoPorCento;
+            System.out.println("ASalario antes do reajuste: " + salario);
+            System.out.println("O percentual do aumento foi de 5%");
+            System.out.println("O valor do aumento foi de: " + resultadoDoAumentoDeCincoPorCento);
+            System.out.println("O salario novo foi de: " + salarioReajustado);
         }
     }
 }
