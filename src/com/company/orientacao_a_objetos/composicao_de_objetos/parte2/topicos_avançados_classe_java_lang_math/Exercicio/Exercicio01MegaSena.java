@@ -5,18 +5,17 @@ import static java.lang.Math.*;
 public class Exercicio01MegaSena {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite a quantidade de jogos que devem ser feitos: ") ;
+        System.out.print("Digite a quantidade de jogos que devem ser feitos: ");
         double jogosAseremFeitos = scanner.nextDouble();
-        for (int i = 0; i < jogosAseremFeitos;) {
-            double numero1 = random() * 20;
-            double numero2 = random() * 20;
-            double numero3 = random() * 20;
-            double numero4 = random() * 20;
-            double numero5 = random() * 20;
-            double numero6 = random() * 20;
+        for (int i = 0; i < jogosAseremFeitos; ) {
+            double numero1 = random() * 60;
+            double numero2 = random() * 60;
+            double numero3 = random() * 60;
+            double numero4 = random() * 60;
+            double numero5 = random() * 60;
+            double numero6 = random() * 60;
 
             //double[] sequencia = new double[]{round(numero1), round(numero2), round(numero3), round(numero4), round(numero5), round(numero6)};
-
                 System.out.println("Jogo " + (1 + i));
                 System.out.println("Os numeros sorteados foram: " + round(numero1));
                 System.out.println("Os numeros sorteados foram: " + round(numero2));
